@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 @login_required
 def dashboard(request):
-    return render(request, 'account/dashboard.html', {'session': dashboard})
+    return render(request, 'registration/dashboard.html', {'session': dashboard})
 
 # from django.contrib.auth import authenticate, login
 # from django.http import HttpResponse
