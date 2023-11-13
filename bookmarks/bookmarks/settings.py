@@ -120,3 +120,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'account:dashboard'
 LOGIN_URL = 'account:login'
 LOGOUT_URL = 'account:logout'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'abhishekvadhera34@gmail.com'
+# EMAIL_HOST_PASSWORD = 'sgzy pmkf phqh ubdo'
+# EMAIL_HOST_PORT = 587
+# EMAIL_USE_TLS = True
+
+PASSWORD_HASHERS = ['django.contrib.auth.hashers.PBKDF2PasswordHasher']
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR/'media'
