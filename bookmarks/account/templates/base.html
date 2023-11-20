@@ -15,11 +15,10 @@
                 <a href="#" class="close">x</a>
             </li>
         {% endfor %}
-    </ul>
-{% endif %}
-    <div id = "content">
-        {% block content%}
-        {%endblock%}
-    </div>
+    {% endif %}
+<div id = "content">
+    {% block content%}
+    {%endblock%}
+</div>
 </body>
 </html>

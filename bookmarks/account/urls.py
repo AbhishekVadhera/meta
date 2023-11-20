@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.urls import path, reverse_lazy
 from django.contrib.auth import views as auth_views
 
+
 from . import views
 
 app_name = 'account'
@@ -28,7 +29,8 @@ urlpatterns = [
     # create user
     path('create-user/', views.register, name='create-user'),
     path('success/', views.success, name='success'),
-    path('edit/', views.edit, name='edit')
+    path('edit/', views.edit, name='edit'),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
